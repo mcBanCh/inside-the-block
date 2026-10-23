@@ -1,0 +1,57 @@
+{
+ "run_id": "20261023T101730Z",
+ "mode": "LIVE",
+ "seed": 11,
+ "config": {
+  "data_dir": "/tmp/tv/data",
+  "live": true,
+  "max_spend_sol": 0.05,
+  "k": 8,
+  "cu_limit": 20000,
+  "price_lo": 1000,
+  "price_hi": 200000,
+  "lead_slots": 1,
+  "bursts_per_validator": 12,
+  "validators_per_client": 2,
+  "min_clients": 3,
+  "clients": [
+   "Agave",
+   "JitoLabs",
+   "AgaveBam",
+   "HarmonicAgave",
+   "Firedancer",
+   "HarmonicFiredancer",
+   "FireBAM",
+   "Rakurai"
+  ],
+  "min_stake_sol": 50000,
+  "horizon_slots": 20000,
+  "arms": [
+   "independent:pre:0",
+   "independent:mid:3",
+   "shared:pre:0",
+   "independent:pre:3",
+   "independent:mid:0",
+   "shared:mid:0"
+  ],
+  "seed": 11,
+  "use_memo": false,
+  "run_id": null,
+  "localnet": true
+ },
+ "ladder_micro_lamports_per_cu": [
+  1000,
+  2100,
+  4500,
+  9700,
+  20600,
+  44000,
+  93800,
+  200000
+ ],
+ "worst_case_fee_lamports": 909000,
+ "started_utc": "2026-10-23T10:17:30Z",
+ "n_bursts": 12,
+ "rpc": "http://127.0.0.1:8899",
+ "finished_utc": "2026-10-23T10:19:57Z"
+}

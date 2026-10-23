@@ -1,0 +1,74 @@
+[
+ {
+  "burst": 0,
+  "validator": "6W4VZoj5PtzkzyJ6PxvY7xT1dvuMfptuQKmfPeF6uhLs",
+  "client": "Agave",
+  "version": "4.3.0",
+  "stake_sol": 0,
+  "tpu_quic": "127.0.0.1:8002",
+  "window_first_slot": 4536,
+  "payer_mode": "shared",
+  "timing": "pre",
+  "gap_ms": 0.0
+ },
+ {
+  "burst": 1,
+  "validator": "6W4VZoj5PtzkzyJ6PxvY7xT1dvuMfptuQKmfPeF6uhLs",
+  "client": "Agave",
+  "version": "4.3.0",
+  "stake_sol": 0,
+  "tpu_quic": "127.0.0.1:8002",
+  "window_first_slot": 4552,
+  "payer_mode": "independent",
+  "timing": "pre",
+  "gap_ms": 0.0
+ },
+ {
+  "burst": 2,
+  "validator": "6W4VZoj5PtzkzyJ6PxvY7xT1dvuMfptuQKmfPeF6uhLs",
+  "client": "Agave",
+  "version": "4.3.0",
+  "stake_sol": 0,
+  "tpu_quic": "127.0.0.1:8002",
+  "window_first_slot": 4568,
+  "payer_mode": "shared",
+  "timing": "mid",
+  "gap_ms": 0.0
+ },
+ {
+  "burst": 3,
+  "validator": "6W4VZoj5PtzkzyJ6PxvY7xT1dvuMfptuQKmfPeF6uhLs",
+  "client": "Agave",
+  "version": "4.3.0",
+  "stake_sol": 0,
+  "tpu_quic": "127.0.0.1:8002",
+  "window_first_slot": 4584,
+  "payer_mode": "independent",
+  "timing": "mid",
+  "gap_ms": 3.0
+ },
+ {
+  "burst": 4,
+  "validator": "6W4VZoj5PtzkzyJ6PxvY7xT1dvuMfptuQKmfPeF6uhLs",
+  "client": "Agave",
+  "version": "4.3.0",
+  "stake_sol": 0,
+  "tpu_quic": "127.0.0.1:8002",
+  "window_first_slot": 4600,
+  "payer_mode": "shared",
+  "timing": "pre",
+  "gap_ms": 3.0
+ },
+ {
+  "burst": 5,
+  "validator": "6W4VZoj5PtzkzyJ6PxvY7xT1dvuMfptuQKmfPeF6uhLs",
+  "client": "Agave",
+  "version": "4.3.0",
+  "stake_sol": 0,
+  "tpu_quic": "127.0.0.1:8002",
+  "window_first_slot": 4616,
+  "payer_mode": "independent",
+  "timing": "mid",
+  "gap_ms": 0.0
+ }
+]

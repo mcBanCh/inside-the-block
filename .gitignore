@@ -1,0 +1,5 @@
+keys/
+*.SECRET.json
+.env
+__pycache__/
+*.pyc

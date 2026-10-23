@@ -1,0 +1,42 @@
+# One command:  docker compose up --build
+#   -> DRY-RUN by default: snapshot cluster, pick >=6 validators on >=3 clients, plan bursts into their
+#      leader windows, build+sign every probe, open the QUIC connection to each leader's TPU at the right
+#      slot -- but write no transaction. Then collect + analyze.
+# Live (real sends, spend-capped):  ITB_LIVE=1 docker compose up --build   (needs ./keys/payer.json)
+name: inside-the-block
+services:
+  itb:
+    build: .
+    command: ["all"]
+    environment:
+      ITB_LIVE: "${ITB_LIVE:-0}"
+      ITB_MAX_SPEND_SOL: "${ITB_MAX_SPEND_SOL:-0.05}"
+      ITB_RPC_URL: "${ITB_RPC_URL:-https://api.mainnet-beta.solana.com}"
+      ITB_PAYER_KEYPAIR: /keys/payer.json
+      ITB_HORIZON_SLOTS: "${ITB_HORIZON_SLOTS:-20000}"            # ~70 min of leader schedule at 200 ms slots
+      ITB_BURSTS_PER_VALIDATOR: "${ITB_BURSTS_PER_VALIDATOR:-6}"
+      ITB_VALIDATORS_PER_CLIENT: "${ITB_VALIDATORS_PER_CLIENT:-2}"
+      ITB_SEED: "${ITB_SEED:-}"
+    volumes:
+      - ./data:/data
+      - ./keys:/keys:ro
+  # zero-spend survey of existing blocks per client (supplementary evidence)
+  passive:
+    build: .
+    profiles: ["passive"]
+    command: ["passive", "--per-client", "4"]
+    environment:
+      ITB_RPC_URL: "${ITB_RPC_URL:-https://api.mainnet-beta.solana.com}"
+    volumes:
+      - ./data:/data
+  # re-run statistics on the committed raw data without touching the network
+  analyze:
+    build: .
+    profiles: ["analyze"]
+    entrypoint: ["python", "-m", "itb.reanalyze", "/data"]
+    volumes:
+      - ./data:/data
+  tests:
+    build: .
+    profiles: ["test"]
+    entrypoint: ["python", "-m", "pytest", "-q", "tests"]

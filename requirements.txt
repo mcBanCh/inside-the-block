@@ -1,0 +1,10 @@
+solders==0.29.0
+aioquic==1.7.0
+httpx==0.28.1
+websockets==17.3
+numpy>=2.0
+scipy>=1.13
+matplotlib>=3.9
+base58==2.1.1
+cryptography>=44
+pytest>=8
