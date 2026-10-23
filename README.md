@@ -7,7 +7,7 @@ This repo answers one question for each validator it measures: **by what rule do
 * All raw data (signatures, slots, block positions, compact block tables) lands in `data/`. Judges can check every claim with `getBlock`/`getTransaction`.
 * All measurements are **after Alpenglow**: the code refuses slots below `459,653,000`, the first Alpenglow-consensus slot ([solana.com/upgrades/alpenglow](https://solana.com/upgrades/alpenglow)).
 
-The results and the dated measurement log are in [`REPORT.md`](REPORT.md).
+The results and the dated measurement log are in [`REPORT.md`](REPORT.md). **Mainnet live results: REPORT §5** and [`data/live-mainnet-pooled/tables.md`](data/live-mainnet-pooled/tables.md).
 
 ---
 
@@ -31,6 +31,8 @@ docker compose run --rm itb verify /data/runs/<run-id>
 
 # 4) recompute every statistic offline from committed raw data
 docker compose --profile analyze run --rm analyze
+# 4b) pool several live runs (per producing client x arm) -> data/live-mainnet-pooled/
+docker compose run --rm --entrypoint python itb -m itb.pool /data/live-mainnet-pooled /data/runs/20261023T144945Z /data/runs/20261023T155226Z
 
 # 5) unit tests (tx shape, spend cap, parsers incl. v1 transactions, statistics)
 docker compose --profile test run --rm tests
@@ -145,7 +147,8 @@ The verdict is one of: `fee-priority` (CI of τ_fee entirely > 0.3, τ_send not)
 * `itb/quic_sender.py`: a ~100-line TPU-QUIC client on `aioquic`.
 * `itb/slots.py`: slot clock (WebSocket + polling fallback).
 * `itb/collect.py`, `itb/blockparse.py`: landing lookup and compact per-tx block tables, gzip JSONL, covering **all** txs in each landing block.
-* `itb/analyze.py`, `itb/stats.py`: τ, CIs, verdicts, `tables.md`, `tau_by_client.png`.
+* `itb/analyze.py`, `itb/stats.py`: τ, CIs, verdicts, `tables.md`, `tau_by_client.png`. Bursts are attributed to the **leader that actually produced the block** (`landed_leader` from `getSlotLeaders`), because many probes are forwarded past the targeted window.
+* `itb/pool.py`: pools several live runs into one per-client × arm table.
 * `itb/passive.py`: zero-spend survey.
 * Logging goes to stdout (docker logs) at INFO with UTC timestamps.
 

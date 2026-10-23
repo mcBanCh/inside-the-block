@@ -1,0 +1,273 @@
+{
+ "n": 24,
+ "index_ok": 24,
+ "leader_ok": 16,
+ "leader_recorded_ok": 24,
+ "unavailable": 0,
+ "rows": [
+  {
+   "burst": 3,
+   "sig": "5BXuya9i7DCUqoqQp6sVSwBDonTnSSb5JAMw3YnwdMschbmyfgFsPMwYHhrRYLdYW3Y1qGokEYEgP7uzT6gurvY8",
+   "slot": 460482540,
+   "index_claimed": 22,
+   "index_onchain": 22,
+   "index_ok": true,
+   "leader_onchain": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "leader_ok": false,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 3,
+   "sig": "3HKR37oN95s4EFqaAFzmUcXJgTLXf9nP2JJjinyyvMAZvYyekUwgN64K1LeD7hXZjp1s24xCbmmZS5W4vJsKxQh8",
+   "slot": 460482540,
+   "index_claimed": 16,
+   "index_onchain": 16,
+   "index_ok": true,
+   "leader_onchain": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "leader_ok": false,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 3,
+   "sig": "YcFSHYmPwANMLh6fBgZyDpAfa2MRKUXJbSYVLFCs5AJ57NRATBjLtGaidCy6JjANvrPX5grjSjaus6w8EyMmsKH",
+   "slot": 460482540,
+   "index_claimed": 1,
+   "index_onchain": 1,
+   "index_ok": true,
+   "leader_onchain": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "leader_ok": false,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 3,
+   "sig": "4NidDzoKP15kWoAW2SWbJmKuYNu9GkbHUSx3jw8WLRkBwGh8JrctNRtGYeqQDKh5U6CuaS88FnfoAKM42HsMjsLd",
+   "slot": 460482540,
+   "index_claimed": 17,
+   "index_onchain": 17,
+   "index_ok": true,
+   "leader_onchain": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "leader_ok": false,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 3,
+   "sig": "kd1GgypmSoGjA9Zz4vr55f7w1FszPrwQANitEAFM9ierUzyFEzWN7dPP3Fp79pzZcMtYVmpkTD6Yh2kptkRKP7d",
+   "slot": 460482540,
+   "index_claimed": 18,
+   "index_onchain": 18,
+   "index_ok": true,
+   "leader_onchain": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "leader_ok": false,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 3,
+   "sig": "3wdin3H5NLAcQhQf6zZoiLiMnKgw4nichMnwah5hsCS2XwBLE4kKMEmshk3QvUmyZEmgg5SYqnThJAGVA9Z2z2if",
+   "slot": 460482540,
+   "index_claimed": 19,
+   "index_onchain": 19,
+   "index_ok": true,
+   "leader_onchain": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "leader_ok": false,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 3,
+   "sig": "2mZeENtBfbsHJh29SyrF1rM6PiRCw2pt3dnLpn75BLPe2KCXBVDER391Y4o5R5jdFnhJXRNomi9RTTwq16sYL4n2",
+   "slot": 460482540,
+   "index_claimed": 21,
+   "index_onchain": 21,
+   "index_ok": true,
+   "leader_onchain": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "leader_ok": false,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 3,
+   "sig": "3PAsRj5XKS37ETL5iS1RyDH3QMCmTkn9wBj6EEJNcjj2wfbA18SezBxQJX3oYduVoFkAoZHB1EqGFwYHRXnyiFaC",
+   "slot": 460482540,
+   "index_claimed": 20,
+   "index_onchain": 20,
+   "index_ok": true,
+   "leader_onchain": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "leader_ok": false,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 4,
+   "sig": "7DYeUQrZ26DYDuzvXAGtJErNHfKqUuYbdLWBcFvxRbdicC3nNGu3BcFAXUzbxLRxL1wtbBTRokXGhX5iddb7So5",
+   "slot": 460482557,
+   "index_claimed": 7,
+   "index_onchain": 7,
+   "index_ok": true,
+   "leader_onchain": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "leader_ok": true,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 4,
+   "sig": "22Tnysq7Fei7r9LYA1ouGj6KyMGp78tuPXqo3oK1Qjbaahm5e3hsoovSqKoPZzNvbod9aCSGHhr48F3JQyJfcF1N",
+   "slot": 460482557,
+   "index_claimed": 8,
+   "index_onchain": 8,
+   "index_ok": true,
+   "leader_onchain": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "leader_ok": true,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 4,
+   "sig": "254seZirChbXBK4rK6WaFxgRJ6jbcCyVR1q2zxeaSvw4FMHiAAWVvCDVJYXXaSvRHztsHK2LFHZ1C3wX66EQ1wco",
+   "slot": 460482557,
+   "index_claimed": 56,
+   "index_onchain": 56,
+   "index_ok": true,
+   "leader_onchain": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "leader_ok": true,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 4,
+   "sig": "2LjP98qub6EZNCdqfg2TS7bQadhs9fwVMUYXu3S2AyUfDReS1zrM8GzZxeM2xkGtYTbqkimrRjmtiDRe71Lhn5ci",
+   "slot": 460482557,
+   "index_claimed": 58,
+   "index_onchain": 58,
+   "index_ok": true,
+   "leader_onchain": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "leader_ok": true,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 4,
+   "sig": "5zQWN4rrETxanNVriF8YwQqLNDG5nCk3nyq6N6jaAKiz8zeV5Z2xCDodSXoxQLEaM1qHYpvVJY2Cm5xBpDXr8RrZ",
+   "slot": 460482557,
+   "index_claimed": 57,
+   "index_onchain": 57,
+   "index_ok": true,
+   "leader_onchain": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "leader_ok": true,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 4,
+   "sig": "5GtzGHynvf2xyoZx3QSRAQD8BLHRXjMdUmpFqdjfQZZKLXsGdPFWf27XQ58io8GKfKM3WBSqjYwWptbaFA13X5Qv",
+   "slot": 460482557,
+   "index_claimed": 60,
+   "index_onchain": 60,
+   "index_ok": true,
+   "leader_onchain": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "leader_ok": true,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 4,
+   "sig": "269zaRx7oiRdbM4qR6J6ViS8bbebYddTJMmaFpsdfWbVLTXEgmomjXH1YowZLXLkGmS1q7C6GYP6sDJYZbT6LCsV",
+   "slot": 460482557,
+   "index_claimed": 61,
+   "index_onchain": 61,
+   "index_ok": true,
+   "leader_onchain": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "leader_ok": true,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 4,
+   "sig": "5t1SawCVAiekWkdihgLMcyitmU1sJm4bEJN4WeJyN7bDx7BNuKYKkDsAxStesGcjVKLyBDdGyKqDJmkSJcz6grNU",
+   "slot": 460482557,
+   "index_claimed": 59,
+   "index_onchain": 59,
+   "index_ok": true,
+   "leader_onchain": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "leader_ok": true,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 5,
+   "sig": "2NtjegfoJisdhXrDE4AM4y8oLjEtrrPEDdkaPi1Y6cQv4esrL9RW4owWx1UdwRGjotRCuyWtWaExmaCoBcG5StWA",
+   "slot": 460482671,
+   "index_claimed": 475,
+   "index_onchain": 475,
+   "index_ok": true,
+   "leader_onchain": "5Us18hLZPXJTS4QVuGSsUw137Dyd2tgBaem24Xsf5nBS",
+   "leader_ok": true,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 5,
+   "sig": "4m8bFJEWYmRMK44n988kmi7eBskh776mnG9hC5DNscPwkbYbz8dJEZt6S6XHLhZm1YDD8Ci5PnYexRFtrYAFSiWJ",
+   "slot": 460482671,
+   "index_claimed": 476,
+   "index_onchain": 476,
+   "index_ok": true,
+   "leader_onchain": "5Us18hLZPXJTS4QVuGSsUw137Dyd2tgBaem24Xsf5nBS",
+   "leader_ok": true,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 5,
+   "sig": "Sj9eGDvMD2fYZuy2ZuABhp2P6Ubhory1vYDEyDksaWj9XJoqu9cyNkatKa4BbJcuajvYNGJYKhUHTyftPPX55dP",
+   "slot": 460482671,
+   "index_claimed": 477,
+   "index_onchain": 477,
+   "index_ok": true,
+   "leader_onchain": "5Us18hLZPXJTS4QVuGSsUw137Dyd2tgBaem24Xsf5nBS",
+   "leader_ok": true,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 5,
+   "sig": "4i9m7QCVim6zCdSLyfRjsqk4kf5FLRpUyUfRLL4ZzqfMLATsPpYxGd7GnUvJiV3pNXEByHHUvTdfffVmv9FziXWE",
+   "slot": 460482671,
+   "index_claimed": 478,
+   "index_onchain": 478,
+   "index_ok": true,
+   "leader_onchain": "5Us18hLZPXJTS4QVuGSsUw137Dyd2tgBaem24Xsf5nBS",
+   "leader_ok": true,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 5,
+   "sig": "3fRZZxjejBi1Nueg48K48vvBeVzh6F3Z4keZX7iU237R8ygKisfRnv5PPRgi28KcRnj7BSUht6zGni34rK2RpZA5",
+   "slot": 460482671,
+   "index_claimed": 479,
+   "index_onchain": 479,
+   "index_ok": true,
+   "leader_onchain": "5Us18hLZPXJTS4QVuGSsUw137Dyd2tgBaem24Xsf5nBS",
+   "leader_ok": true,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 5,
+   "sig": "g9XQkSQSfPVw25iv8eecMZXW5TJQQmrkLBgZj3UMe6kwbaQ61f8qAvjtuBCchDemjntUBCgVS1yqmunF34fXpm6",
+   "slot": 460482671,
+   "index_claimed": 480,
+   "index_onchain": 480,
+   "index_ok": true,
+   "leader_onchain": "5Us18hLZPXJTS4QVuGSsUw137Dyd2tgBaem24Xsf5nBS",
+   "leader_ok": true,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 5,
+   "sig": "RegkHXVcUkyeZFiLPhnKzGogJQ3BxJe9hhqaqLCCWvL3FKXVBjFGAhMNa7vcMNyu5ETgNi5cpPnJjrVktuhk2gJ",
+   "slot": 460482671,
+   "index_claimed": 481,
+   "index_onchain": 481,
+   "index_ok": true,
+   "leader_onchain": "5Us18hLZPXJTS4QVuGSsUw137Dyd2tgBaem24Xsf5nBS",
+   "leader_ok": true,
+   "leader_recorded_ok": true
+  },
+  {
+   "burst": 5,
+   "sig": "4doBx4aNc1c5tMf3tCipCVezKGMGy8ji9uKZ6yYR8FDC7FomoZoSi3m3iGWAd997MKfeP6stQ7ARs98QPPvbdABU",
+   "slot": 460482671,
+   "index_claimed": 482,
+   "index_onchain": 482,
+   "index_ok": true,
+   "leader_onchain": "5Us18hLZPXJTS4QVuGSsUw137Dyd2tgBaem24Xsf5nBS",
+   "leader_ok": true,
+   "leader_recorded_ok": true
+  }
+ ]
+}

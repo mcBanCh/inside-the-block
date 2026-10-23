@@ -1,136 +1,137 @@
 {
  "runs": [
-  "/data/runs/20261023T144945Z"
+  "/data/runs/20261023T144945Z",
+  "/data/runs/20261023T155226Z"
  ],
- "n_bursts": 82,
+ "n_bursts": 167,
  "status": {
-  "sent": 53,
-  "late_trigger_skipped": 17,
-  "missed_trigger_before_start": 10,
+  "sent": 111,
+  "late_trigger_skipped": 41,
+  "missed_trigger_before_start": 13,
   "error": 2
  },
- "sent": 424,
- "landed": 152,
- "usable_bursts": 19,
- "forwarded_usable": 8,
+ "sent": 888,
+ "landed": 321,
+ "usable_bursts": 40,
+ "forwarded_usable": 20,
  "by_target": {
   "HarmonicAgave/4.3.2": {
-   "bursts_sent": 8,
-   "probes_sent": 64,
-   "landed": 56
+   "bursts_sent": 15,
+   "probes_sent": 120,
+   "landed": 96
   },
   "Rakurai/4.3.2": {
-   "bursts_sent": 9,
-   "probes_sent": 72,
+   "bursts_sent": 14,
+   "probes_sent": 112,
    "landed": 8
   },
   "Firedancer/26.10.4": {
-   "bursts_sent": 6,
-   "probes_sent": 48,
-   "landed": 40
+   "bursts_sent": 14,
+   "probes_sent": 112,
+   "landed": 73
   },
   "FireBAM/26.10.4": {
-   "bursts_sent": 3,
-   "probes_sent": 24,
-   "landed": 0
+   "bursts_sent": 12,
+   "probes_sent": 96,
+   "landed": 8
   },
   "JitoLabs/4.3.2": {
-   "bursts_sent": 7,
-   "probes_sent": 56,
+   "bursts_sent": 15,
+   "probes_sent": 120,
    "landed": 0
   },
   "HarmonicFiredancer/26.10.4": {
-   "bursts_sent": 6,
-   "probes_sent": 48,
-   "landed": 32
+   "bursts_sent": 15,
+   "probes_sent": 120,
+   "landed": 104
   },
   "Agave/4.3.2": {
-   "bursts_sent": 7,
-   "probes_sent": 56,
-   "landed": 8
+   "bursts_sent": 14,
+   "probes_sent": 112,
+   "landed": 16
   },
   "AgaveBam/4.3.2": {
-   "bursts_sent": 7,
-   "probes_sent": 56,
-   "landed": 8
+   "bursts_sent": 12,
+   "probes_sent": 96,
+   "landed": 16
   }
  },
  "pooled": [
   {
    "producer_client": "ALL clients",
    "arm": "independent:*",
-   "bursts": 11,
-   "leaders": 10,
-   "forwarded": 4,
-   "mean_tau_fee": 0.32467532467532456,
+   "bursts": 21,
+   "leaders": 19,
+   "forwarded": 12,
+   "mean_tau_fee": 0.3265306122448979,
    "ci_tau_fee": [
-    0.03230519480519477,
-    0.6103896103896104
+    0.11904761904761904,
+    0.5306122448979591
    ],
-   "mean_tau_send": 0.10389610389610385,
+   "mean_tau_send": 0.03061224489795917,
    "ci_tau_send": [
-    -0.18831168831168824,
-    0.3896103896103895
+    -0.13265306122448978,
+    0.21088435374149656
    ],
-   "fee_sign_p": 0.548828125,
+   "fee_sign_p": 0.0783538818359375,
    "perfect_fee": 1,
    "verdict": "no rule detected (consistent with noise at this n)"
   },
   {
    "producer_client": "ALL clients",
    "arm": "independent:mid:0",
-   "bursts": 3,
-   "leaders": 3,
-   "forwarded": 1,
-   "mean_tau_fee": 0.3095238095238095,
+   "bursts": 9,
+   "leaders": 9,
+   "forwarded": 5,
+   "mean_tau_fee": 0.30158730158730157,
    "ci_tau_fee": [
-    -0.35714285714285704,
-    0.9999999999999997
+    -0.023809523809523798,
+    0.6269841269841269
    ],
-   "mean_tau_send": 0.047619047619047596,
+   "mean_tau_send": 0.007936507936507929,
    "ci_tau_send": [
-    -0.35714285714285704,
-    0.49999999999999983
+    -0.14285714285714285,
+    0.18253968253968247
    ],
-   "fee_sign_p": 1.0,
+   "fee_sign_p": 0.1796875,
    "perfect_fee": 1,
    "verdict": "no rule detected (consistent with noise at this n)"
   },
   {
    "producer_client": "ALL clients",
    "arm": "independent:mid:3",
-   "bursts": 5,
-   "leaders": 5,
-   "forwarded": 3,
-   "mean_tau_fee": 0.5142857142857142,
+   "bursts": 6,
+   "leaders": 6,
+   "forwarded": 4,
+   "mean_tau_fee": 0.5476190476190476,
    "ci_tau_fee": [
-    0.07142857142857142,
-    0.8857142857142856
+    0.15476190476190474,
+    0.8571428571428571
    ],
-   "mean_tau_send": 0.2428571428571428,
+   "mean_tau_send": 0.21428571428571422,
    "ci_tau_send": [
-    -0.22857142857142856,
-    0.7714285714285712
+    -0.19047619047619047,
+    0.6428571428571428
    ],
-   "fee_sign_p": 0.375,
+   "fee_sign_p": 0.21875,
    "perfect_fee": 0,
    "verdict": "no rule detected (consistent with noise at this n)"
   },
   {
    "producer_client": "ALL clients",
    "arm": "independent:pre:0",
-   "bursts": 3,
-   "leaders": 3,
-   "forwarded": 0,
-   "mean_tau_fee": 0.02380952380952377,
+   "bursts": 6,
+   "leaders": 6,
+   "forwarded": 3,
+   "mean_tau_fee": 0.14285714285714282,
    "ci_tau_fee": [
-    -0.21428571428571427,
-    0.49999999999999983
+    -0.15476190476190477,
+    0.4880952380952381
    ],
-   "mean_tau_send": -0.07142857142857141,
+   "mean_tau_send": -0.11904761904761901,
    "ci_tau_send": [
-    -0.6428571428571428,
-    0.2857142857142857
+    -0.40476190476190466,
+    0.13095238095238093
    ],
    "fee_sign_p": 1.0,
    "perfect_fee": 0,
@@ -139,95 +140,115 @@
   {
    "producer_client": "ALL clients",
    "arm": "shared:*",
-   "bursts": 8,
-   "leaders": 8,
-   "forwarded": 4,
-   "mean_tau_fee": 0.7767857142857141,
+   "bursts": 19,
+   "leaders": 15,
+   "forwarded": 8,
+   "mean_tau_fee": 0.6616541353383457,
    "ci_tau_fee": [
-    0.5982142857142856,
-    0.9285714285714284
+    0.45864661654135336,
+    0.838345864661654
    ],
-   "mean_tau_send": -0.05357142857142856,
+   "mean_tau_send": 0.14285714285714282,
    "ci_tau_send": [
-    -0.23214285714285712,
-    0.12499999999999997
+    -0.06390977443609021,
+    0.3609022556390976
    ],
-   "fee_sign_p": 0.0078125,
-   "perfect_fee": 3,
-   "verdict": "fee-priority (38% of bursts perfectly fee-sorted)"
+   "fee_sign_p": 0.004425048828125,
+   "perfect_fee": 6,
+   "verdict": "fee-priority (32% of bursts perfectly fee-sorted)"
   },
   {
    "producer_client": "ALL clients",
    "arm": "shared:mid:0",
-   "bursts": 2,
-   "leaders": 2,
-   "forwarded": 2,
-   "mean_tau_fee": 0.7857142857142856,
+   "bursts": 4,
+   "leaders": 4,
+   "forwarded": 3,
+   "mean_tau_fee": 0.8392857142857142,
    "ci_tau_fee": [
     0.7857142857142856,
-    0.7857142857142856
+    0.8928571428571428
    ],
    "mean_tau_send": -0.07142857142857142,
    "ci_tau_send": [
-    -0.14285714285714285,
-    0.0
+    -0.12499999999999999,
+    -0.017857142857142856
    ],
-   "fee_sign_p": 0.5,
+   "fee_sign_p": 0.125,
    "perfect_fee": 0,
    "verdict": "fee-priority (0% of bursts perfectly fee-sorted)"
   },
   {
    "producer_client": "ALL clients",
    "arm": "shared:pre:0",
-   "bursts": 2,
-   "leaders": 2,
-   "forwarded": 0,
-   "mean_tau_fee": 0.5714285714285714,
+   "bursts": 7,
+   "leaders": 5,
+   "forwarded": 3,
+   "mean_tau_fee": 0.5408163265306122,
    "ci_tau_fee": [
-    0.2857142857142857,
-    0.8571428571428571
+    0.17346938775510204,
+    0.8571428571428569
    ],
-   "mean_tau_send": -0.24999999999999994,
+   "mean_tau_send": 0.17346938775510198,
    "ci_tau_send": [
-    -0.4999999999999999,
-    0.0
+    -0.25510204081632654,
+    0.6326530612244896
    ],
-   "fee_sign_p": 0.5,
-   "perfect_fee": 0,
+   "fee_sign_p": 0.453125,
+   "perfect_fee": 2,
    "verdict": "no rule detected (consistent with noise at this n)"
   },
   {
    "producer_client": "ALL clients",
    "arm": "shared:pre:3",
-   "bursts": 4,
-   "leaders": 4,
+   "bursts": 8,
+   "leaders": 8,
    "forwarded": 2,
-   "mean_tau_fee": 0.8749999999999998,
+   "mean_tau_fee": 0.6785714285714284,
    "ci_tau_fee": [
-    0.6249999999999999,
-    0.9999999999999998
+    0.3482142857142856,
+    0.9374999999999998
    ],
-   "mean_tau_send": 0.05357142857142856,
+   "mean_tau_send": 0.22321428571428567,
    "ci_tau_send": [
-    -0.21428571428571425,
-    0.3214285714285714
+    -0.03571428571428571,
+    0.500223214285713
    ],
-   "fee_sign_p": 0.125,
-   "perfect_fee": 3,
-   "verdict": "fee-priority (75% of bursts perfectly fee-sorted)"
+   "fee_sign_p": 0.0703125,
+   "perfect_fee": 4,
+   "verdict": "fee-priority (50% of bursts perfectly fee-sorted)"
   },
   {
    "producer_client": "Agave/4.3.2",
    "arm": "shared:*",
+   "bursts": 2,
+   "leaders": 2,
+   "forwarded": 0,
+   "mean_tau_fee": 0.4642857142857142,
+   "ci_tau_fee": [
+    -0.07142857142857142,
+    0.9999999999999998
+   ],
+   "mean_tau_send": 0.4285714285714285,
+   "ci_tau_send": [
+    -0.14285714285714285,
+    0.9999999999999998
+   ],
+   "fee_sign_p": 1.0,
+   "perfect_fee": 1,
+   "verdict": "no rule detected (consistent with noise at this n)"
+  },
+  {
+   "producer_client": "Agave/4.3.2",
+   "arm": "shared:pre:0",
    "bursts": 1,
    "leaders": 1,
    "forwarded": 0,
-   "mean_tau_fee": 0.9999999999999998,
+   "mean_tau_fee": -0.07142857142857142,
    "ci_tau_fee": null,
-   "mean_tau_send": -0.14285714285714285,
+   "mean_tau_send": 0.9999999999999998,
    "ci_tau_send": null,
    "fee_sign_p": 1.0,
-   "perfect_fee": 1,
+   "perfect_fee": 0,
    "verdict": "insufficient data"
   },
   {
@@ -247,10 +268,30 @@
   {
    "producer_client": "AgaveBam/4.3.2",
    "arm": "independent:*",
+   "bursts": 2,
+   "leaders": 2,
+   "forwarded": 1,
+   "mean_tau_fee": 0.857142857142857,
+   "ci_tau_fee": [
+    0.7857142857142856,
+    0.9285714285714285
+   ],
+   "mean_tau_send": 0.07142857142857142,
+   "ci_tau_send": [
+    0.07142857142857142,
+    0.07142857142857142
+   ],
+   "fee_sign_p": 0.5,
+   "perfect_fee": 0,
+   "verdict": "fee-priority (0% of bursts perfectly fee-sorted)"
+  },
+  {
+   "producer_client": "AgaveBam/4.3.2",
+   "arm": "independent:mid:0",
    "bursts": 1,
    "leaders": 1,
-   "forwarded": 1,
-   "mean_tau_fee": 0.9285714285714285,
+   "forwarded": 0,
+   "mean_tau_fee": 0.7857142857142856,
    "ci_tau_fee": null,
    "mean_tau_send": 0.07142857142857142,
    "ci_tau_send": null,
@@ -273,38 +314,72 @@
    "verdict": "insufficient data"
   },
   {
+   "producer_client": "AgaveBam/4.3.2",
+   "arm": "shared:*",
+   "bursts": 1,
+   "leaders": 1,
+   "forwarded": 1,
+   "mean_tau_fee": 0.9999999999999998,
+   "ci_tau_fee": null,
+   "mean_tau_send": 0.07142857142857142,
+   "ci_tau_send": null,
+   "fee_sign_p": 1.0,
+   "perfect_fee": 1,
+   "verdict": "insufficient data"
+  },
+  {
+   "producer_client": "AgaveBam/4.3.2",
+   "arm": "shared:pre:0",
+   "bursts": 1,
+   "leaders": 1,
+   "forwarded": 1,
+   "mean_tau_fee": 0.9999999999999998,
+   "ci_tau_fee": null,
+   "mean_tau_send": 0.07142857142857142,
+   "ci_tau_send": null,
+   "fee_sign_p": 1.0,
+   "perfect_fee": 1,
+   "verdict": "insufficient data"
+  },
+  {
    "producer_client": "Firedancer/26.10.4",
    "arm": "independent:*",
-   "bursts": 3,
+   "bursts": 4,
    "leaders": 2,
    "forwarded": 0,
-   "mean_tau_fee": 0.1428571428571428,
+   "mean_tau_fee": -0.017857142857142877,
    "ci_tau_fee": [
-    -0.35714285714285704,
-    0.9999999999999997
+    -0.4285714285714285,
+    0.6607142857142856
    ],
-   "mean_tau_send": 0.42857142857142855,
+   "mean_tau_send": 0.26785714285714285,
    "ci_tau_send": [
-    0.0,
-    0.9999999999999997
+    -0.10714285714285714,
+    0.7499999999999998
    ],
-   "fee_sign_p": 1.0,
+   "fee_sign_p": 0.625,
    "perfect_fee": 1,
    "verdict": "no rule detected (consistent with noise at this n)"
   },
   {
    "producer_client": "Firedancer/26.10.4",
    "arm": "independent:mid:0",
-   "bursts": 1,
-   "leaders": 1,
+   "bursts": 2,
+   "leaders": 2,
    "forwarded": 0,
-   "mean_tau_fee": 0.9999999999999998,
-   "ci_tau_fee": null,
-   "mean_tau_send": 0.0,
-   "ci_tau_send": null,
+   "mean_tau_fee": 0.24999999999999994,
+   "ci_tau_fee": [
+    -0.4999999999999999,
+    0.9999999999999998
+   ],
+   "mean_tau_send": -0.10714285714285714,
+   "ci_tau_send": [
+    -0.21428571428571427,
+    0.0
+   ],
    "fee_sign_p": 1.0,
    "perfect_fee": 1,
-   "verdict": "insufficient data"
+   "verdict": "no rule detected (consistent with noise at this n)"
   },
   {
    "producer_client": "Firedancer/26.10.4",
@@ -337,100 +412,132 @@
   {
    "producer_client": "Firedancer/26.10.4",
    "arm": "shared:*",
-   "bursts": 2,
-   "leaders": 2,
+   "bursts": 5,
+   "leaders": 3,
    "forwarded": 0,
-   "mean_tau_fee": 0.6428571428571428,
+   "mean_tau_fee": 0.37142857142857133,
    "ci_tau_fee": [
-    0.2857142857142857,
-    0.9999999999999998
+    -0.11428571428571425,
+    0.857142857142857
    ],
-   "mean_tau_send": -0.14285714285714285,
+   "mean_tau_send": 0.3142857142857142,
    "ci_tau_send": [
-    -0.2857142857142857,
-    0.0
+    -0.14285714285714285,
+    0.7999999999999998
    ],
-   "fee_sign_p": 0.5,
-   "perfect_fee": 1,
+   "fee_sign_p": 1.0,
+   "perfect_fee": 2,
    "verdict": "no rule detected (consistent with noise at this n)"
   },
   {
    "producer_client": "Firedancer/26.10.4",
    "arm": "shared:pre:0",
-   "bursts": 1,
+   "bursts": 2,
    "leaders": 1,
    "forwarded": 0,
-   "mean_tau_fee": 0.2857142857142857,
-   "ci_tau_fee": null,
-   "mean_tau_send": 0.0,
-   "ci_tau_send": null,
+   "mean_tau_fee": 0.07142857142857142,
+   "ci_tau_fee": [
+    -0.14285714285714285,
+    0.2857142857142857
+   ],
+   "mean_tau_send": 0.4999999999999999,
+   "ci_tau_send": [
+    0.0,
+    0.9999999999999998
+   ],
    "fee_sign_p": 1.0,
    "perfect_fee": 0,
-   "verdict": "insufficient data"
+   "verdict": "no rule detected (consistent with noise at this n)"
   },
   {
    "producer_client": "Firedancer/26.10.4",
    "arm": "shared:pre:3",
-   "bursts": 1,
-   "leaders": 1,
+   "bursts": 3,
+   "leaders": 3,
    "forwarded": 0,
-   "mean_tau_fee": 0.9999999999999998,
-   "ci_tau_fee": null,
-   "mean_tau_send": -0.2857142857142857,
-   "ci_tau_send": null,
+   "mean_tau_fee": 0.5714285714285713,
+   "ci_tau_fee": [
+    -0.2857142857142857,
+    0.9999999999999997
+   ],
+   "mean_tau_send": 0.19047619047619038,
+   "ci_tau_send": [
+    -0.2857142857142857,
+    0.9999999999999997
+   ],
    "fee_sign_p": 1.0,
-   "perfect_fee": 1,
-   "verdict": "insufficient data"
+   "perfect_fee": 2,
+   "verdict": "no rule detected (consistent with noise at this n)"
   },
   {
    "producer_client": "HarmonicAgave/4.3.2",
    "arm": "independent:*",
-   "bursts": 3,
-   "leaders": 3,
-   "forwarded": 2,
-   "mean_tau_fee": 0.09523809523809523,
+   "bursts": 8,
+   "leaders": 8,
+   "forwarded": 7,
+   "mean_tau_fee": 0.20535714285714285,
    "ci_tau_fee": [
-    -0.35714285714285704,
-    0.35714285714285704
+    0.008928571428571428,
+    0.4017857142857142
    ],
-   "mean_tau_send": -0.023809523809523836,
+   "mean_tau_send": -1.3877787807814457e-17,
    "ci_tau_send": [
-    -0.35714285714285704,
-    0.49999999999999983
+    -0.17857142857142855,
+    0.19642857142857137
    ],
-   "fee_sign_p": 1.0,
+   "fee_sign_p": 0.0703125,
    "perfect_fee": 0,
    "verdict": "no rule detected (consistent with noise at this n)"
   },
   {
    "producer_client": "HarmonicAgave/4.3.2",
    "arm": "independent:mid:0",
-   "bursts": 2,
-   "leaders": 2,
-   "forwarded": 1,
-   "mean_tau_fee": -0.0357142857142857,
+   "bursts": 5,
+   "leaders": 5,
+   "forwarded": 4,
+   "mean_tau_fee": 0.1,
    "ci_tau_fee": [
-    -0.3571428571428571,
-    0.2857142857142857
+    -0.14285714285714285,
+    0.2714285714285714
    ],
-   "mean_tau_send": 0.0714285714285714,
+   "mean_tau_send": 0.014285714285714273,
    "ci_tau_send": [
-    -0.3571428571428571,
-    0.4999999999999999
+    -0.25714285714285706,
+    0.32857142857142846
    ],
-   "fee_sign_p": 1.0,
+   "fee_sign_p": 0.375,
    "perfect_fee": 0,
    "verdict": "no rule detected (consistent with noise at this n)"
   },
   {
    "producer_client": "HarmonicAgave/4.3.2",
    "arm": "independent:mid:3",
+   "bursts": 2,
+   "leaders": 2,
+   "forwarded": 2,
+   "mean_tau_fee": 0.5357142857142856,
+   "ci_tau_fee": [
+    0.3571428571428571,
+    0.7142857142857142
+   ],
+   "mean_tau_send": -0.07142857142857142,
+   "ci_tau_send": [
+    -0.21428571428571427,
+    0.07142857142857142
+   ],
+   "fee_sign_p": 0.5,
+   "perfect_fee": 0,
+   "verdict": "fee-priority (0% of bursts perfectly fee-sorted)"
+  },
+  {
+   "producer_client": "HarmonicAgave/4.3.2",
+   "arm": "independent:pre:0",
    "bursts": 1,
    "leaders": 1,
    "forwarded": 1,
-   "mean_tau_fee": 0.3571428571428571,
+   "mean_tau_fee": 0.07142857142857142,
    "ci_tau_fee": null,
-   "mean_tau_send": -0.21428571428571427,
+   "mean_tau_send": 0.07142857142857142,
    "ci_tau_send": null,
    "fee_sign_p": 1.0,
    "perfect_fee": 0,
@@ -439,40 +546,40 @@
   {
    "producer_client": "HarmonicAgave/4.3.2",
    "arm": "shared:*",
-   "bursts": 4,
-   "leaders": 4,
+   "bursts": 6,
+   "leaders": 5,
    "forwarded": 3,
-   "mean_tau_fee": 0.7321428571428571,
+   "mean_tau_fee": 0.6785714285714285,
    "ci_tau_fee": [
-    0.5714285714285714,
-    0.8392857142857142
+    0.49999999999999994,
+    0.8333333333333331
    ],
-   "mean_tau_send": -0.07142857142857142,
+   "mean_tau_send": 0.03571428571428572,
    "ci_tau_send": [
-    -0.3749999999999999,
-    0.23214285714285712
+    -0.22619047619047616,
+    0.3095238095238095
    ],
-   "fee_sign_p": 0.125,
+   "fee_sign_p": 0.03125,
    "perfect_fee": 0,
    "verdict": "fee-priority (0% of bursts perfectly fee-sorted)"
   },
   {
    "producer_client": "HarmonicAgave/4.3.2",
    "arm": "shared:mid:0",
-   "bursts": 2,
-   "leaders": 2,
+   "bursts": 3,
+   "leaders": 3,
    "forwarded": 2,
-   "mean_tau_fee": 0.7857142857142856,
+   "mean_tau_fee": 0.8095238095238094,
    "ci_tau_fee": [
     0.7857142857142856,
-    0.7857142857142856
+    0.8571428571428571
    ],
    "mean_tau_send": -0.07142857142857142,
    "ci_tau_send": [
     -0.14285714285714285,
     0.0
    ],
-   "fee_sign_p": 0.5,
+   "fee_sign_p": 0.25,
    "perfect_fee": 0,
    "verdict": "fee-priority (0% of bursts perfectly fee-sorted)"
   },
@@ -493,36 +600,56 @@
   {
    "producer_client": "HarmonicAgave/4.3.2",
    "arm": "shared:pre:3",
-   "bursts": 1,
-   "leaders": 1,
+   "bursts": 2,
+   "leaders": 2,
    "forwarded": 1,
-   "mean_tau_fee": 0.4999999999999999,
-   "ci_tau_fee": null,
-   "mean_tau_send": 0.3571428571428571,
-   "ci_tau_send": null,
-   "fee_sign_p": 1.0,
+   "mean_tau_fee": 0.3928571428571428,
+   "ci_tau_fee": [
+    0.2857142857142857,
+    0.4999999999999999
+   ],
+   "mean_tau_send": 0.46428571428571425,
+   "ci_tau_send": [
+    0.3571428571428571,
+    0.5714285714285714
+   ],
+   "fee_sign_p": 0.5,
    "perfect_fee": 0,
-   "verdict": "insufficient data"
+   "verdict": "arrival order / FIFO (0% of bursts perfectly send-ordered)"
   },
   {
    "producer_client": "HarmonicFiredancer/26.10.4",
    "arm": "independent:*",
-   "bursts": 3,
-   "leaders": 3,
-   "forwarded": 1,
-   "mean_tau_fee": 0.4761904761904761,
+   "bursts": 6,
+   "leaders": 6,
+   "forwarded": 4,
+   "mean_tau_fee": 0.5119047619047619,
    "ci_tau_fee": [
-    -0.21428571428571427,
-    0.9285714285714285
+    0.14285714285714282,
+    0.8809523809523809
    ],
-   "mean_tau_send": 0.16666666666666663,
+   "mean_tau_send": 0.011904761904761913,
    "ci_tau_send": [
-    -0.42857142857142855,
-    0.7857142857142856
+    -0.3095238095238095,
+    0.35714285714285704
    ],
-   "fee_sign_p": 1.0,
+   "fee_sign_p": 0.6875,
    "perfect_fee": 0,
    "verdict": "no rule detected (consistent with noise at this n)"
+  },
+  {
+   "producer_client": "HarmonicFiredancer/26.10.4",
+   "arm": "independent:mid:0",
+   "bursts": 1,
+   "leaders": 1,
+   "forwarded": 1,
+   "mean_tau_fee": 0.9285714285714285,
+   "ci_tau_fee": null,
+   "mean_tau_send": 0.14285714285714285,
+   "ci_tau_send": null,
+   "fee_sign_p": 1.0,
+   "perfect_fee": 0,
+   "verdict": "insufficient data"
   },
   {
    "producer_client": "HarmonicFiredancer/26.10.4",
@@ -547,12 +674,52 @@
   {
    "producer_client": "HarmonicFiredancer/26.10.4",
    "arm": "independent:pre:0",
+   "bursts": 3,
+   "leaders": 3,
+   "forwarded": 2,
+   "mean_tau_fee": 0.16666666666666666,
+   "ci_tau_fee": [
+    -0.21428571428571427,
+    0.8571428571428571
+   ],
+   "mean_tau_send": -0.14285714285714282,
+   "ci_tau_send": [
+    -0.49999999999999983,
+    0.14285714285714285
+   ],
+   "fee_sign_p": 1.0,
+   "perfect_fee": 0,
+   "verdict": "no rule detected (consistent with noise at this n)"
+  },
+  {
+   "producer_client": "HarmonicFiredancer/26.10.4",
+   "arm": "shared:*",
+   "bursts": 5,
+   "leaders": 4,
+   "forwarded": 4,
+   "mean_tau_fee": 0.9428571428571427,
+   "ci_tau_fee": [
+    0.8999999999999998,
+    0.9857142857142855
+   ],
+   "mean_tau_send": 5.551115123125783e-18,
+   "ci_tau_send": [
+    -0.3428571428571428,
+    0.2571428571428571
+   ],
+   "fee_sign_p": 0.0625,
+   "perfect_fee": 2,
+   "verdict": "fee-priority (40% of bursts perfectly fee-sorted)"
+  },
+  {
+   "producer_client": "HarmonicFiredancer/26.10.4",
+   "arm": "shared:mid:0",
    "bursts": 1,
    "leaders": 1,
-   "forwarded": 0,
-   "mean_tau_fee": -0.21428571428571427,
+   "forwarded": 1,
+   "mean_tau_fee": 0.9285714285714285,
    "ci_tau_fee": null,
-   "mean_tau_send": 0.14285714285714285,
+   "mean_tau_send": -0.07142857142857142,
    "ci_tau_send": null,
    "fee_sign_p": 1.0,
    "perfect_fee": 0,
@@ -560,31 +727,43 @@
   },
   {
    "producer_client": "HarmonicFiredancer/26.10.4",
-   "arm": "shared:*",
-   "bursts": 1,
+   "arm": "shared:pre:0",
+   "bursts": 2,
    "leaders": 1,
-   "forwarded": 1,
-   "mean_tau_fee": 0.9999999999999998,
-   "ci_tau_fee": null,
-   "mean_tau_send": 0.2857142857142857,
-   "ci_tau_send": null,
-   "fee_sign_p": 1.0,
+   "forwarded": 2,
+   "mean_tau_fee": 0.9285714285714284,
+   "ci_tau_fee": [
+    0.8571428571428571,
+    0.9999999999999998
+   ],
+   "mean_tau_send": -0.17857142857142855,
+   "ci_tau_send": [
+    -0.6428571428571428,
+    0.2857142857142857
+   ],
+   "fee_sign_p": 0.5,
    "perfect_fee": 1,
-   "verdict": "insufficient data"
+   "verdict": "fee-priority (50% of bursts perfectly fee-sorted)"
   },
   {
    "producer_client": "HarmonicFiredancer/26.10.4",
    "arm": "shared:pre:3",
-   "bursts": 1,
-   "leaders": 1,
+   "bursts": 2,
+   "leaders": 2,
    "forwarded": 1,
-   "mean_tau_fee": 0.9999999999999998,
-   "ci_tau_fee": null,
-   "mean_tau_send": 0.2857142857142857,
-   "ci_tau_send": null,
-   "fee_sign_p": 1.0,
+   "mean_tau_fee": 0.9642857142857142,
+   "ci_tau_fee": [
+    0.9285714285714285,
+    0.9999999999999998
+   ],
+   "mean_tau_send": 0.21428571428571427,
+   "ci_tau_send": [
+    0.14285714285714285,
+    0.2857142857142857
+   ],
+   "fee_sign_p": 0.5,
    "perfect_fee": 1,
-   "verdict": "insufficient data"
+   "verdict": "fee-priority (50% of bursts perfectly fee-sorted)"
   },
   {
    "producer_client": "Rakurai/4.3.2",

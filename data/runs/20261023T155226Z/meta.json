@@ -52,5 +52,6 @@
  "worst_case_fee_lamports": 6165000,
  "started_utc": "2026-10-23T15:52:28Z",
  "n_bursts": 85,
- "rpc": "https://api.mainnet-beta.solana.com"
+ "rpc": "https://api.mainnet-beta.solana.com",
+ "finished_utc": "2026-10-23T17:02:26Z"
 }
