@@ -169,14 +169,17 @@ async def run(cfg: Config, rpc: Rpc, payer_path: str | None = None) -> str:
     eph = [Keypair() for _ in range(cfg.k)]
     if cfg.live:
         json.dump([list(bytes(k)) for k in eph], open(os.path.join(rdir, "ephemeral_keys.SECRET.json"), "w"))
+        # each payer signs at most one probe per independent burst; payer 0 also signs all K probes of shared bursts
+        n_shared = sum(1 for b in bursts if b["payer_mode"] == "shared")
         per_payer = RENT_EXEMPT_MIN + 2 * max_fee(1000, 0) + len(bursts) * max_fee(cfg.cu_limit, max(ladder))
-        per_payer += len(bursts) * max_fee(cfg.cu_limit, max(ladder)) * cfg.k  # shared-payer arm uses payer 0
+        amounts = [per_payer + (n_shared * (cfg.k - 1) * max_fee(cfg.cu_limit, max(ladder)) if i == 0 else 0)
+                   for i in range(cfg.k)]
         bh = Hash.from_string((await rpc.call("getLatestBlockhash", [{"commitment": "confirmed"}]))["value"]["blockhash"])
-        fund = build_transfers(master, bh, [(k.pubkey(), per_payer) for k in eph])
+        fund = build_transfers(master, bh, [(k.pubkey(), a) for k, a in zip(eph, amounts)])
         cap.reserve(max_fee(5000, 0), "fund", [str(fund.signatures[0])])
         sig = await rpc.call("sendTransaction", [__import__("base64").b64encode(bytes(fund)).decode(),
                                                  {"encoding": "base64", "skipPreflight": False, "preflightCommitment": "confirmed"}])
-        log.info("funding %d payers x %d lamports: %s", cfg.k, per_payer, sig)
+        log.info("funding %d payers, %d lamports total: %s", cfg.k, sum(amounts), sig)
         await _confirm(rpc, [sig])
     else:
         log.info("dry-run: ephemeral payers generated, NOT funded; nothing will be sent")
@@ -292,7 +295,7 @@ async def _sweep(rpc, eph, dest: Pubkey, cap, rdir):
     out = []
     for k in eph:
         bal = await rpc.call("getBalance", [str(k.pubkey()), {"commitment": "confirmed"}])
-        amt = bal["value"] - max_fee(1000, 0)
+        amt = bal["value"] - max_fee(1000, 0)  # = exact fee at CU price 0, so the payer is drained to zero
         if amt <= 0:
             continue
         bh = Hash.from_string((await rpc.call("getLatestBlockhash", [{"commitment": "confirmed"}]))["value"]["blockhash"])

@@ -42,12 +42,15 @@ async def verify(rpc: Rpc, rdir: str) -> dict:
             rows.append({"burst": b["burst"], "sig": t["sig"], "slot": slot,
                          "index_claimed": t.get("index_in_block"), "index_onchain": idx,
                          "index_ok": idx == t.get("index_in_block"),
-                         "leader_onchain": leaders[slot], "leader_ok": leaders[slot] == b["validator"]})
+                         "leader_onchain": leaders[slot], "leader_ok": leaders[slot] == b["validator"],
+                         "leader_recorded_ok": leaders[slot] == t.get("landed_leader", b["validator"])})
     out = {"n": len(rows), "index_ok": sum(r["index_ok"] for r in rows),
            "leader_ok": sum(r["leader_ok"] for r in rows),
+           "leader_recorded_ok": sum(bool(r.get("leader_recorded_ok")) for r in rows),
            "unavailable": sum(bool(r.get("unavailable")) for r in rows), "rows": rows}
     with open(os.path.join(rdir, "verify.json"), "w") as f:
         json.dump(out, f, indent=1)
-    log.info("verified %d landed probes: index matches %d, leader matches %d, block unavailable %d",
-             out["n"], out["index_ok"], out["leader_ok"], out["unavailable"])
+    log.info("verified %d landed probes: index matches %d, produced by the targeted leader %d, "
+             "producer matches the recorded landed_leader %d, block unavailable %d",
+             out["n"], out["index_ok"], out["leader_ok"], out["leader_recorded_ok"], out["unavailable"])
     return out

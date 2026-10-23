@@ -40,6 +40,20 @@ async def collect(rpc: Rpc, rdir: str):
                 t["tx_err"] = s["err"] if s else None
                 if s:
                     slots_needed.add(s["slot"])
+    # 2b) who actually produced each landing slot (probes can be forwarded to a later leader)
+    leader_of = {}
+    if slots_needed:
+        lo, hi = min(slots_needed), max(slots_needed)
+        for a in range(lo, hi + 1, 4000):
+            try:
+                ls = await rpc.call("getSlotLeaders", [a, min(4000, hi + 1 - a)])
+                leader_of.update({a + i: x for i, x in enumerate(ls)})
+            except RpcError as e:
+                log.warning("getSlotLeaders %s: %s", a, e)
+    for r in recs:
+        for t in r.get("txs", []):
+            if t.get("landed_slot") is not None:
+                t["landed_leader"] = leader_of.get(t["landed_slot"])
     # 3) full blocks for every slot holding a probe -> compact per-tx table (all txs, not only ours)
     tables = {}
     gz = gzip.open(os.path.join(rdir, "blocks.jsonl.gz"), "wt")

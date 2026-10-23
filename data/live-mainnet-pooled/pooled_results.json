@@ -1,0 +1,618 @@
+{
+ "runs": [
+  "/data/runs/20261023T144945Z"
+ ],
+ "n_bursts": 82,
+ "status": {
+  "sent": 53,
+  "late_trigger_skipped": 17,
+  "missed_trigger_before_start": 10,
+  "error": 2
+ },
+ "sent": 424,
+ "landed": 152,
+ "usable_bursts": 19,
+ "forwarded_usable": 8,
+ "by_target": {
+  "HarmonicAgave/4.3.2": {
+   "bursts_sent": 8,
+   "probes_sent": 64,
+   "landed": 56
+  },
+  "Rakurai/4.3.2": {
+   "bursts_sent": 9,
+   "probes_sent": 72,
+   "landed": 8
+  },
+  "Firedancer/26.10.4": {
+   "bursts_sent": 6,
+   "probes_sent": 48,
+   "landed": 40
+  },
+  "FireBAM/26.10.4": {
+   "bursts_sent": 3,
+   "probes_sent": 24,
+   "landed": 0
+  },
+  "JitoLabs/4.3.2": {
+   "bursts_sent": 7,
+   "probes_sent": 56,
+   "landed": 0
+  },
+  "HarmonicFiredancer/26.10.4": {
+   "bursts_sent": 6,
+   "probes_sent": 48,
+   "landed": 32
+  },
+  "Agave/4.3.2": {
+   "bursts_sent": 7,
+   "probes_sent": 56,
+   "landed": 8
+  },
+  "AgaveBam/4.3.2": {
+   "bursts_sent": 7,
+   "probes_sent": 56,
+   "landed": 8
+  }
+ },
+ "pooled": [
+  {
+   "producer_client": "ALL clients",
+   "arm": "independent:*",
+   "bursts": 11,
+   "leaders": 10,
+   "forwarded": 4,
+   "mean_tau_fee": 0.32467532467532456,
+   "ci_tau_fee": [
+    0.03230519480519477,
+    0.6103896103896104
+   ],
+   "mean_tau_send": 0.10389610389610385,
+   "ci_tau_send": [
+    -0.18831168831168824,
+    0.3896103896103895
+   ],
+   "fee_sign_p": 0.548828125,
+   "perfect_fee": 1,
+   "verdict": "no rule detected (consistent with noise at this n)"
+  },
+  {
+   "producer_client": "ALL clients",
+   "arm": "independent:mid:0",
+   "bursts": 3,
+   "leaders": 3,
+   "forwarded": 1,
+   "mean_tau_fee": 0.3095238095238095,
+   "ci_tau_fee": [
+    -0.35714285714285704,
+    0.9999999999999997
+   ],
+   "mean_tau_send": 0.047619047619047596,
+   "ci_tau_send": [
+    -0.35714285714285704,
+    0.49999999999999983
+   ],
+   "fee_sign_p": 1.0,
+   "perfect_fee": 1,
+   "verdict": "no rule detected (consistent with noise at this n)"
+  },
+  {
+   "producer_client": "ALL clients",
+   "arm": "independent:mid:3",
+   "bursts": 5,
+   "leaders": 5,
+   "forwarded": 3,
+   "mean_tau_fee": 0.5142857142857142,
+   "ci_tau_fee": [
+    0.07142857142857142,
+    0.8857142857142856
+   ],
+   "mean_tau_send": 0.2428571428571428,
+   "ci_tau_send": [
+    -0.22857142857142856,
+    0.7714285714285712
+   ],
+   "fee_sign_p": 0.375,
+   "perfect_fee": 0,
+   "verdict": "no rule detected (consistent with noise at this n)"
+  },
+  {
+   "producer_client": "ALL clients",
+   "arm": "independent:pre:0",
+   "bursts": 3,
+   "leaders": 3,
+   "forwarded": 0,
+   "mean_tau_fee": 0.02380952380952377,
+   "ci_tau_fee": [
+    -0.21428571428571427,
+    0.49999999999999983
+   ],
+   "mean_tau_send": -0.07142857142857141,
+   "ci_tau_send": [
+    -0.6428571428571428,
+    0.2857142857142857
+   ],
+   "fee_sign_p": 1.0,
+   "perfect_fee": 0,
+   "verdict": "no rule detected (consistent with noise at this n)"
+  },
+  {
+   "producer_client": "ALL clients",
+   "arm": "shared:*",
+   "bursts": 8,
+   "leaders": 8,
+   "forwarded": 4,
+   "mean_tau_fee": 0.7767857142857141,
+   "ci_tau_fee": [
+    0.5982142857142856,
+    0.9285714285714284
+   ],
+   "mean_tau_send": -0.05357142857142856,
+   "ci_tau_send": [
+    -0.23214285714285712,
+    0.12499999999999997
+   ],
+   "fee_sign_p": 0.0078125,
+   "perfect_fee": 3,
+   "verdict": "fee-priority (38% of bursts perfectly fee-sorted)"
+  },
+  {
+   "producer_client": "ALL clients",
+   "arm": "shared:mid:0",
+   "bursts": 2,
+   "leaders": 2,
+   "forwarded": 2,
+   "mean_tau_fee": 0.7857142857142856,
+   "ci_tau_fee": [
+    0.7857142857142856,
+    0.7857142857142856
+   ],
+   "mean_tau_send": -0.07142857142857142,
+   "ci_tau_send": [
+    -0.14285714285714285,
+    0.0
+   ],
+   "fee_sign_p": 0.5,
+   "perfect_fee": 0,
+   "verdict": "fee-priority (0% of bursts perfectly fee-sorted)"
+  },
+  {
+   "producer_client": "ALL clients",
+   "arm": "shared:pre:0",
+   "bursts": 2,
+   "leaders": 2,
+   "forwarded": 0,
+   "mean_tau_fee": 0.5714285714285714,
+   "ci_tau_fee": [
+    0.2857142857142857,
+    0.8571428571428571
+   ],
+   "mean_tau_send": -0.24999999999999994,
+   "ci_tau_send": [
+    -0.4999999999999999,
+    0.0
+   ],
+   "fee_sign_p": 0.5,
+   "perfect_fee": 0,
+   "verdict": "no rule detected (consistent with noise at this n)"
+  },
+  {
+   "producer_client": "ALL clients",
+   "arm": "shared:pre:3",
+   "bursts": 4,
+   "leaders": 4,
+   "forwarded": 2,
+   "mean_tau_fee": 0.8749999999999998,
+   "ci_tau_fee": [
+    0.6249999999999999,
+    0.9999999999999998
+   ],
+   "mean_tau_send": 0.05357142857142856,
+   "ci_tau_send": [
+    -0.21428571428571425,
+    0.3214285714285714
+   ],
+   "fee_sign_p": 0.125,
+   "perfect_fee": 3,
+   "verdict": "fee-priority (75% of bursts perfectly fee-sorted)"
+  },
+  {
+   "producer_client": "Agave/4.3.2",
+   "arm": "shared:*",
+   "bursts": 1,
+   "leaders": 1,
+   "forwarded": 0,
+   "mean_tau_fee": 0.9999999999999998,
+   "ci_tau_fee": null,
+   "mean_tau_send": -0.14285714285714285,
+   "ci_tau_send": null,
+   "fee_sign_p": 1.0,
+   "perfect_fee": 1,
+   "verdict": "insufficient data"
+  },
+  {
+   "producer_client": "Agave/4.3.2",
+   "arm": "shared:pre:3",
+   "bursts": 1,
+   "leaders": 1,
+   "forwarded": 0,
+   "mean_tau_fee": 0.9999999999999998,
+   "ci_tau_fee": null,
+   "mean_tau_send": -0.14285714285714285,
+   "ci_tau_send": null,
+   "fee_sign_p": 1.0,
+   "perfect_fee": 1,
+   "verdict": "insufficient data"
+  },
+  {
+   "producer_client": "AgaveBam/4.3.2",
+   "arm": "independent:*",
+   "bursts": 1,
+   "leaders": 1,
+   "forwarded": 1,
+   "mean_tau_fee": 0.9285714285714285,
+   "ci_tau_fee": null,
+   "mean_tau_send": 0.07142857142857142,
+   "ci_tau_send": null,
+   "fee_sign_p": 1.0,
+   "perfect_fee": 0,
+   "verdict": "insufficient data"
+  },
+  {
+   "producer_client": "AgaveBam/4.3.2",
+   "arm": "independent:mid:3",
+   "bursts": 1,
+   "leaders": 1,
+   "forwarded": 1,
+   "mean_tau_fee": 0.9285714285714285,
+   "ci_tau_fee": null,
+   "mean_tau_send": 0.07142857142857142,
+   "ci_tau_send": null,
+   "fee_sign_p": 1.0,
+   "perfect_fee": 0,
+   "verdict": "insufficient data"
+  },
+  {
+   "producer_client": "Firedancer/26.10.4",
+   "arm": "independent:*",
+   "bursts": 3,
+   "leaders": 2,
+   "forwarded": 0,
+   "mean_tau_fee": 0.1428571428571428,
+   "ci_tau_fee": [
+    -0.35714285714285704,
+    0.9999999999999997
+   ],
+   "mean_tau_send": 0.42857142857142855,
+   "ci_tau_send": [
+    0.0,
+    0.9999999999999997
+   ],
+   "fee_sign_p": 1.0,
+   "perfect_fee": 1,
+   "verdict": "no rule detected (consistent with noise at this n)"
+  },
+  {
+   "producer_client": "Firedancer/26.10.4",
+   "arm": "independent:mid:0",
+   "bursts": 1,
+   "leaders": 1,
+   "forwarded": 0,
+   "mean_tau_fee": 0.9999999999999998,
+   "ci_tau_fee": null,
+   "mean_tau_send": 0.0,
+   "ci_tau_send": null,
+   "fee_sign_p": 1.0,
+   "perfect_fee": 1,
+   "verdict": "insufficient data"
+  },
+  {
+   "producer_client": "Firedancer/26.10.4",
+   "arm": "independent:mid:3",
+   "bursts": 1,
+   "leaders": 1,
+   "forwarded": 0,
+   "mean_tau_fee": -0.3571428571428571,
+   "ci_tau_fee": null,
+   "mean_tau_send": 0.9999999999999998,
+   "ci_tau_send": null,
+   "fee_sign_p": 1.0,
+   "perfect_fee": 0,
+   "verdict": "insufficient data"
+  },
+  {
+   "producer_client": "Firedancer/26.10.4",
+   "arm": "independent:pre:0",
+   "bursts": 1,
+   "leaders": 1,
+   "forwarded": 0,
+   "mean_tau_fee": -0.21428571428571427,
+   "ci_tau_fee": null,
+   "mean_tau_send": 0.2857142857142857,
+   "ci_tau_send": null,
+   "fee_sign_p": 1.0,
+   "perfect_fee": 0,
+   "verdict": "insufficient data"
+  },
+  {
+   "producer_client": "Firedancer/26.10.4",
+   "arm": "shared:*",
+   "bursts": 2,
+   "leaders": 2,
+   "forwarded": 0,
+   "mean_tau_fee": 0.6428571428571428,
+   "ci_tau_fee": [
+    0.2857142857142857,
+    0.9999999999999998
+   ],
+   "mean_tau_send": -0.14285714285714285,
+   "ci_tau_send": [
+    -0.2857142857142857,
+    0.0
+   ],
+   "fee_sign_p": 0.5,
+   "perfect_fee": 1,
+   "verdict": "no rule detected (consistent with noise at this n)"
+  },
+  {
+   "producer_client": "Firedancer/26.10.4",
+   "arm": "shared:pre:0",
+   "bursts": 1,
+   "leaders": 1,
+   "forwarded": 0,
+   "mean_tau_fee": 0.2857142857142857,
+   "ci_tau_fee": null,
+   "mean_tau_send": 0.0,
+   "ci_tau_send": null,
+   "fee_sign_p": 1.0,
+   "perfect_fee": 0,
+   "verdict": "insufficient data"
+  },
+  {
+   "producer_client": "Firedancer/26.10.4",
+   "arm": "shared:pre:3",
+   "bursts": 1,
+   "leaders": 1,
+   "forwarded": 0,
+   "mean_tau_fee": 0.9999999999999998,
+   "ci_tau_fee": null,
+   "mean_tau_send": -0.2857142857142857,
+   "ci_tau_send": null,
+   "fee_sign_p": 1.0,
+   "perfect_fee": 1,
+   "verdict": "insufficient data"
+  },
+  {
+   "producer_client": "HarmonicAgave/4.3.2",
+   "arm": "independent:*",
+   "bursts": 3,
+   "leaders": 3,
+   "forwarded": 2,
+   "mean_tau_fee": 0.09523809523809523,
+   "ci_tau_fee": [
+    -0.35714285714285704,
+    0.35714285714285704
+   ],
+   "mean_tau_send": -0.023809523809523836,
+   "ci_tau_send": [
+    -0.35714285714285704,
+    0.49999999999999983
+   ],
+   "fee_sign_p": 1.0,
+   "perfect_fee": 0,
+   "verdict": "no rule detected (consistent with noise at this n)"
+  },
+  {
+   "producer_client": "HarmonicAgave/4.3.2",
+   "arm": "independent:mid:0",
+   "bursts": 2,
+   "leaders": 2,
+   "forwarded": 1,
+   "mean_tau_fee": -0.0357142857142857,
+   "ci_tau_fee": [
+    -0.3571428571428571,
+    0.2857142857142857
+   ],
+   "mean_tau_send": 0.0714285714285714,
+   "ci_tau_send": [
+    -0.3571428571428571,
+    0.4999999999999999
+   ],
+   "fee_sign_p": 1.0,
+   "perfect_fee": 0,
+   "verdict": "no rule detected (consistent with noise at this n)"
+  },
+  {
+   "producer_client": "HarmonicAgave/4.3.2",
+   "arm": "independent:mid:3",
+   "bursts": 1,
+   "leaders": 1,
+   "forwarded": 1,
+   "mean_tau_fee": 0.3571428571428571,
+   "ci_tau_fee": null,
+   "mean_tau_send": -0.21428571428571427,
+   "ci_tau_send": null,
+   "fee_sign_p": 1.0,
+   "perfect_fee": 0,
+   "verdict": "insufficient data"
+  },
+  {
+   "producer_client": "HarmonicAgave/4.3.2",
+   "arm": "shared:*",
+   "bursts": 4,
+   "leaders": 4,
+   "forwarded": 3,
+   "mean_tau_fee": 0.7321428571428571,
+   "ci_tau_fee": [
+    0.5714285714285714,
+    0.8392857142857142
+   ],
+   "mean_tau_send": -0.07142857142857142,
+   "ci_tau_send": [
+    -0.3749999999999999,
+    0.23214285714285712
+   ],
+   "fee_sign_p": 0.125,
+   "perfect_fee": 0,
+   "verdict": "fee-priority (0% of bursts perfectly fee-sorted)"
+  },
+  {
+   "producer_client": "HarmonicAgave/4.3.2",
+   "arm": "shared:mid:0",
+   "bursts": 2,
+   "leaders": 2,
+   "forwarded": 2,
+   "mean_tau_fee": 0.7857142857142856,
+   "ci_tau_fee": [
+    0.7857142857142856,
+    0.7857142857142856
+   ],
+   "mean_tau_send": -0.07142857142857142,
+   "ci_tau_send": [
+    -0.14285714285714285,
+    0.0
+   ],
+   "fee_sign_p": 0.5,
+   "perfect_fee": 0,
+   "verdict": "fee-priority (0% of bursts perfectly fee-sorted)"
+  },
+  {
+   "producer_client": "HarmonicAgave/4.3.2",
+   "arm": "shared:pre:0",
+   "bursts": 1,
+   "leaders": 1,
+   "forwarded": 0,
+   "mean_tau_fee": 0.8571428571428571,
+   "ci_tau_fee": null,
+   "mean_tau_send": -0.4999999999999999,
+   "ci_tau_send": null,
+   "fee_sign_p": 1.0,
+   "perfect_fee": 0,
+   "verdict": "insufficient data"
+  },
+  {
+   "producer_client": "HarmonicAgave/4.3.2",
+   "arm": "shared:pre:3",
+   "bursts": 1,
+   "leaders": 1,
+   "forwarded": 1,
+   "mean_tau_fee": 0.4999999999999999,
+   "ci_tau_fee": null,
+   "mean_tau_send": 0.3571428571428571,
+   "ci_tau_send": null,
+   "fee_sign_p": 1.0,
+   "perfect_fee": 0,
+   "verdict": "insufficient data"
+  },
+  {
+   "producer_client": "HarmonicFiredancer/26.10.4",
+   "arm": "independent:*",
+   "bursts": 3,
+   "leaders": 3,
+   "forwarded": 1,
+   "mean_tau_fee": 0.4761904761904761,
+   "ci_tau_fee": [
+    -0.21428571428571427,
+    0.9285714285714285
+   ],
+   "mean_tau_send": 0.16666666666666663,
+   "ci_tau_send": [
+    -0.42857142857142855,
+    0.7857142857142856
+   ],
+   "fee_sign_p": 1.0,
+   "perfect_fee": 0,
+   "verdict": "no rule detected (consistent with noise at this n)"
+  },
+  {
+   "producer_client": "HarmonicFiredancer/26.10.4",
+   "arm": "independent:mid:3",
+   "bursts": 2,
+   "leaders": 2,
+   "forwarded": 1,
+   "mean_tau_fee": 0.8214285714285714,
+   "ci_tau_fee": [
+    0.7142857142857142,
+    0.9285714285714285
+   ],
+   "mean_tau_send": 0.17857142857142852,
+   "ci_tau_send": [
+    -0.42857142857142855,
+    0.7857142857142856
+   ],
+   "fee_sign_p": 0.5,
+   "perfect_fee": 0,
+   "verdict": "fee-priority (0% of bursts perfectly fee-sorted)"
+  },
+  {
+   "producer_client": "HarmonicFiredancer/26.10.4",
+   "arm": "independent:pre:0",
+   "bursts": 1,
+   "leaders": 1,
+   "forwarded": 0,
+   "mean_tau_fee": -0.21428571428571427,
+   "ci_tau_fee": null,
+   "mean_tau_send": 0.14285714285714285,
+   "ci_tau_send": null,
+   "fee_sign_p": 1.0,
+   "perfect_fee": 0,
+   "verdict": "insufficient data"
+  },
+  {
+   "producer_client": "HarmonicFiredancer/26.10.4",
+   "arm": "shared:*",
+   "bursts": 1,
+   "leaders": 1,
+   "forwarded": 1,
+   "mean_tau_fee": 0.9999999999999998,
+   "ci_tau_fee": null,
+   "mean_tau_send": 0.2857142857142857,
+   "ci_tau_send": null,
+   "fee_sign_p": 1.0,
+   "perfect_fee": 1,
+   "verdict": "insufficient data"
+  },
+  {
+   "producer_client": "HarmonicFiredancer/26.10.4",
+   "arm": "shared:pre:3",
+   "bursts": 1,
+   "leaders": 1,
+   "forwarded": 1,
+   "mean_tau_fee": 0.9999999999999998,
+   "ci_tau_fee": null,
+   "mean_tau_send": 0.2857142857142857,
+   "ci_tau_send": null,
+   "fee_sign_p": 1.0,
+   "perfect_fee": 1,
+   "verdict": "insufficient data"
+  },
+  {
+   "producer_client": "Rakurai/4.3.2",
+   "arm": "independent:*",
+   "bursts": 1,
+   "leaders": 1,
+   "forwarded": 0,
+   "mean_tau_fee": 0.4999999999999999,
+   "ci_tau_fee": null,
+   "mean_tau_send": -0.6428571428571428,
+   "ci_tau_send": null,
+   "fee_sign_p": 1.0,
+   "perfect_fee": 0,
+   "verdict": "insufficient data"
+  },
+  {
+   "producer_client": "Rakurai/4.3.2",
+   "arm": "independent:pre:0",
+   "bursts": 1,
+   "leaders": 1,
+   "forwarded": 0,
+   "mean_tau_fee": 0.4999999999999999,
+   "ci_tau_fee": null,
+   "mean_tau_send": -0.6428571428571428,
+   "ci_tau_send": null,
+   "fee_sign_p": 1.0,
+   "perfect_fee": 0,
+   "verdict": "insufficient data"
+  }
+ ]
+}

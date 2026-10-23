@@ -19,7 +19,9 @@ from solders.pubkey import Pubkey
 from solders.system_program import TransferParams, transfer
 from solders.transaction import VersionedTransaction
 
-MEMO_V2 = Pubkey.from_string("MemoSq4gqABAXKb96qnH8TysNne8xFEBLFbuNgYsJu1")
+# SPL Memo v1. On 2026-10-23 getAccountInfo(MemoSq4gqABAXKb96qnH8TysNne8xFEBLFbuNgYsJu1) returned null on mainnet
+# and every probe failed load with ProgramAccountNotFound (REPORT §6.10), so the probes use Memo v1, which is live.
+MEMO_V2 = Pubkey.from_string("Memo1UhkJRfHyvLMcVucJwxXeuD728EqVDDwQDxFMNo")
 LAMPORTS_PER_SIG = 5_000
 MEMO_LEN = 40
 
