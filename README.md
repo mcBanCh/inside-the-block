@@ -44,6 +44,8 @@ Without Docker: `pip install -r requirements.txt && python -m itb --data data al
 
 ## 2. The experiment in one picture
 
+![where order is decided](docs/tx-path.png)
+
 ```mermaid
 sequenceDiagram
     autonumber
